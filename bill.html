@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/bill.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 23:01:57 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="mpay" />
+  <meta name="keywords" content="mpay" />
+  <meta name="author" content="mpay" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+  <title>mPay App</title>
+  <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
+  <meta name="theme-color" content="#122636" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="mpay" />
+  <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
+
+  <!-- swiper css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/swiper-bundle.min.css" />
+
+  <!-- Theme css -->
+  <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  <style>
+    h2{ color: blue;
+
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="section-t-space">
+    <div class="custom-container">
+      <div class="header-panel">
+        <a href="successfully-signin.html" class="back-btn">
+          <i class="icon" data-feather="arrow-left"></i>
+        </a>
+        <h2>Select a Plan</h2>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- bill details section starts -->
+  <section>
+    <div class="custom-container">
+      <div class="title">
+        <h2>This week checklist</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <div class="bill-box">
+            <div class="d-flex gap-3">
+              <div class="bill-icon">
+                <img class="img-fluid icon" src="assets/images/svg/9.svg" alt="p6" />
+              </div>
+              <div class="bill-details">
+                <h5 class="dark-text">Register</h5>
+                <h6 class="light-text mt-2">Weekly Plan</h6>
+              </div>
+            </div>
+            <div class="bill-price">
+              <h5>₦5,000.00</h5>
+              <a href="#payone" data-bs-toggle="modal" class="btn bill-pay ">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="bill-box">
+            <div class="d-flex gap-3">
+              <div class="bill-icon">
+                <img class="img-fluid icon" src="assets/images/svg/9.svg" alt="p7" />
+              </div>
+              <div class="bill-details">
+                <h5 class="dark-text">Register</h5>
+                <h6 class="light-text mt-2">Weekly Plan</h6>
+              </div>
+            </div>
+            <div class="bill-price">
+              <h5>₦10,000.00</h5>
+              <a href="#paytwo" data-bs-toggle="modal" class="btn bill-pay bill-paid">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="bill-box">
+            <div class="d-flex gap-3">
+              <div class="bill-icon">
+                <img class="img-fluid icon" src="assets/images/svg/9.svg" alt="p8" />
+              </div>
+              <div class="bill-details">
+                <h5 class="dark-text">Register</h5>
+                <h6 class="light-text mt-2">Weekly Plan</h6>
+              </div>
+            </div>
+            <div class="bill-price">
+              <h5>₦15,000.00</h5>
+              <a href="#paythree" data-bs-toggle="modal" class="btn bill-pay ">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="bill-box">
+            <div class="d-flex gap-3">
+              <div class="bill-icon">
+                <img class="img-fluid icon" src="assets/images/svg/9.svg" alt="p9" />
+              </div>
+              <div class="bill-details">
+                <h5 class="dark-text">Register</h5>
+                <h6 class="light-text mt-2">Weekly Plan</h6>
+              </div>
+            </div>
+            <div class="bill-price">
+              <h5>₦20,000.00</h5>
+              <a href="#payfour" data-bs-toggle="modal" class="btn bill-pay bill-paid">Pay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- bill details section starts -->
+<br><br>
+<div>
+  <center>
+    <p>
+     <h5 class="dark-text">Please note that your Daily allowance depends on your subscription plan ( e.g You can only withdraw 3x a day on each of the selected plans )</h5>
+    
+    </p>
+  </center>
+</div>
+
+  <!-- pay modal starts -->
+  <div class="modal pay-modal fade" id="payone" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Registration Bill</h2>
+        </div>
+        <div class="modal-body">
+          <ul class="details-list">
+            <li>
+              <h3 class="fw-normal dark-text">Amount</h3>
+              <h3 class="fw-semibold theme-color">NGN 5,000.00</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Number</h3>
+              <h3 class="fw-normal light-text">7790914946</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Name</h3>
+              <h3 class="fw-normal light-text">BST-Satisfied Server</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Bank Name</h3>
+              <h3 class="fw-semibold theme-color">WEMA BANK</h3>
+            </li>
+          </ul>
+          <a href="#" class="btn theme-btn successfully w-100">Confirm Payment</a>
+        </div>
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">
+          <i class="icon" data-feather="x"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- pay modal end -->
+
+  <!-- paid modal starts -->
+  <div class="modal pay-modal fade" id="paytwo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Registration Bill</h2>
+        </div>
+        <div class="modal-body">
+          <ul class="details-list">
+            <li>
+              <h3 class="fw-normal dark-text">Amount</h3>
+              <h3 class="fw-semibold theme-color">NGN 10,000.00</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Number</h3>
+              <h3 class="fw-normal light-text">7790914946</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Name</h3>
+              <h3 class="fw-normal light-text">BST-Satisfied Server</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Bank Name</h3>
+              <h3 class="fw-semibold theme-color">WEMA BANK</h3>
+            </li>
+          </ul>
+          <a href="#" class="btn theme-btn successfully w-100">Confirm Payment</a>
+        </div>
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">
+          <i class="icon" data-feather="x"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- paid modal end -->
+
+  <!-- paid modal starts -->
+  <div class="modal pay-modal fade" id="paythree" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Registration Bill</h2>
+        </div>
+        <div class="modal-body">
+          <ul class="details-list">
+            <li>
+              <h3 class="fw-normal dark-text">Amount</h3>
+              <h3 class="fw-semibold theme-color">NGN 15,000.00</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Nunber</h3>
+              <h3 class="fw-normal light-text">7790914946</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Name</h3>
+              <h3 class="fw-normal light-text">BST-Satisfied Server</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Bank Name</h3>
+              <h3 class="fw-semibold theme-color">WEMA BANK</h3>
+            </li>
+          </ul>
+          <a href="#" class="btn theme-btn successfully w-100">Confirm Payment</a>
+        </div>
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">
+          <i class="icon" data-feather="x"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- paid modal end -->
+
+  <!-- paid modal starts -->
+  <div class="modal pay-modal fade" id="payfour" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Registration Bill</h2>
+        </div>
+        <div class="modal-body">
+          <ul class="details-list">
+            <li>
+              <h3 class="fw-normal dark-text">Amount</h3>
+              <h3 class="fw-semibold theme-color">NGN 20,000.00</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Number</h3>
+              <h3 class="fw-normal light-text">7790914946</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Account Name</h3>
+              <h3 class="fw-normal light-text">BST-Satisfied Server</h3>
+            </li>
+            <li>
+              <h3 class="fw-normal dark-text">Bank Name</h3>
+              <h3 class="fw-semibold theme-color">WEMA BANK</h3>
+            </li>
+          </ul>
+          <a href="#" class="btn theme-btn successfully w-100">Confirm Payment</a>
+        </div>
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">
+          <i class="icon" data-feather="x"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- paid modal end -->
+
+  <!-- swiper js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom-swiper.js"></script>
+
+  <!-- feather js -->
+  <script src="assets/js/feather.min.js"></script>
+  <script src="assets/js/custom-feather.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- script js -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/bill.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 23:01:57 GMT -->
+</html>
